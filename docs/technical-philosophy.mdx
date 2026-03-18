@@ -1,0 +1,101 @@
+---
+sidebar_position: 4
+---
+
+# Technical Philosophy
+
+If you are a technical contributor, you should understand our Technical Philosophy so you can make effective contributions and ask the right questions to yourself and to our *Founder* / *Technical Engineer*.
+
+
+### The Philosophy
+
+- **Treat every technical decision as a potential new standard**  
+    Always keep in mind that we aim to define strong, long-term standards for the Web industry. Every decision should be wisely made with a long-term vision.
+
+- **Make every specification as precise as possible**  
+    Be extremely clear when defining components and designs at Orivon. Lack of clarity slows down development, forces other technical contributors to make assumptions, and increases the risk of mistakes.
+
+- **Write the decisions and reasons**: Each decision you make for the best out of the Technical Design, should be written clear for the future contributor.
+
+    There isn't anything more time saving than writing what is around a specific decision, and why it seems to you the best out of all other options, vision mismatch is what causes error at the development phase
+
+- **Document decisions and their reasoning** Every technical decision should be clearly documented along with the reasoning behind it.
+
+    There is nothing more valuable than understanding *why* a decision was made. Misalignment in vision is one of the main causes of errors during technical design contributions.
+
+- **Have a clear goal before designing** Before designing any component, clearly define the goal you want to achieve.  
+
+    This is usually available in the [Orivon Documentation](https://docs.orivonstack.com/). If something is not 100% clear, it means there is missing *Implementation* piece, so discuss it with the Founder and contributors before proceeding.
+
+    Understanding the whole context, and opening a discussion with the right questions is a core part for an effective contribution
+
+- **Prioritize modularization** Everything should be as modular as possible to ensure simplicity, scalability, and safety.
+
+    *(Example: orivon-runtime → orivon-core → Orivon Browser)*
+
+- **Minimal Core, Expressive Higher Layers** The base protocol must remain minimal, stable, and conservative.  
+
+    It should only provide the essential primitives required for universal interoperability.
+
+    More complex logic, experimentation, and feature development should live in higher layers, which can evolve faster without compromising the stability of the core.
+
+- **Ask the right questions**  
+    Often, progress is not about immediately finding the right solution, but about asking the right questions.  
+
+    Remember, Orivon aims to become a new standard for Web3 browsing. Alignment in vision and goals is critical.
+
+    Asking the right questions both to yourself and within Orivon discussions is key to meaningful contributions and growth.
+
+
+As you look trough the [Technical Design](https://docs.orivonstack.com/docs/technical-design/orivon-runtime) you will notice that philosophy applied, and further contributions should follow that as well
+
+
+### Contribution flow
+
+This section provides practical guidelines for contributing effectively to Orivon.
+
+There are three main layers in Orivon’s design and development. Understanding them is essential to contributing effectively.
+
+- **Foundational Implementation**  
+    The Foundational Implementation can be found at [**Orivon Docs Implementations**](https://docs.orivonstack.com/docs/category/implementations)  
+    You can contribute to it on Github at [**Github - Implementations**](https://github.com/OrivonBrowser/orivon-docs/tree/main/docs/implementations)
+
+    This is the top layer that defines exactly what Orivon should be.
+
+    It does not only describe the user experience, but also defines how developers should interact with the system. Orivon aims to significantly improve both user and developer experience, so both perspectives should be included here.
+
+    *How should a developer accomplish X?*  
+    *How should a user interact with X? How should it look and behave?*
+
+    Lower layers, such as Technical Design, fully depend on this layer.
+
+- **Technical Design**  
+
+    This layer defines how Orivon works from a technical perspective.  
+    You can find it at [**Orivon Docs Technical Design**](https://docs.orivonstack.com/docs/category/technical-design)   
+    You can contribute to it on Github at [**Github - Technical Design**](https://github.com/OrivonBrowser/orivon-docs/tree/main/docs/technical-design)
+
+    It describes system architecture, technical decisions, and implementation strategies required to fulfill the *Foundational Implementation*.
+
+    If you are defining how something should look or behave from a user or developer perspective, then it belongs to the *Foundational Implementation*, not Technical Design.
+
+    Technical Design focuses strictly on *how to implement* what has already been defined there.
+
+    *How should this be implemented?*  
+    *What is the best design choice for the Implementation goal?*
+
+    If your Technical Design aligns with the *Foundational Implementation*, and the choices you made seems the best ones, it will be approved.
+
+
+- **Code Implementation**  
+    This layer does not yet exist, as development has not started.
+
+    It represents the actual codebase that implements the Technical Design.
+
+    Every design decision must already be defined in the Technical Design. This layer focuses purely on clean code organization, scalability, and long-term maintainability.
+
+    *How should the code be structured for this design?*  
+    *What is the best development workflow to implement it?*
+
+
+
